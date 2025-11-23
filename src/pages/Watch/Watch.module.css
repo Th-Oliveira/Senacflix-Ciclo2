@@ -1,0 +1,119 @@
+.main {
+  flex: 1;
+  padding: 16px 0 32px;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Estado "nenhum filme selecionado" */
+.pageTitle {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.pageText {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Card de detalhes do filme */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+/* Título + botão na mesma linha */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  color: #1f6098;
+  flex: 1;
+}
+
+.category {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #555555;
+}
+
+/* Player responsivo 16:9 */
+.playerWrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.playerWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Bloco de descrição */
+.descriptionBlock {
+  margin-bottom: 16px;
+}
+
+.description {
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: #333333;
+}
+
+/* Informações adicionais */
+.infoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.infoItem {
+  min-width: 120px;
+}
+
+.infoLabel {
+  font-weight: 600;
+  display: block;
+  color: #555555;
+}
+
+.infoValue {
+  color: #333333;
+}
+
+/* Link "Voltar para Home" no topo do card */
+.backLink {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #e0e0e0;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.backLink:hover {
+  filter: brightness(0.95);
+}

@@ -1,0 +1,11 @@
+.banner {  
+  border-radius: 12px;  
+  margin-top: 16px;
+  margin-bottom: 32px;;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}

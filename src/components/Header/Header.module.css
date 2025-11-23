@@ -1,0 +1,18 @@
+.header {
+  background-color: #61aeca;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza a logo */
+}
+
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer; /* deixa claro que é clicável */
+}

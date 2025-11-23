@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(20% - 10px); /* 5 por linha no desktop */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #c4c4c4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none; /* tira sublinhado do Link */
+}
+
+.image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* TÍTULO ABAIXO DA IMAGEM */
+.title {
+  padding: 6px 8px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #222222;
+  text-align: center;
+  background-color: #f5f5f5;
+  /* opcional: limitar a 2 linhas e cortar o resto */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* máximo de 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsivo (mantém o que você já tinha) */
+@media (max-width: 900px) {
+  .card {
+    flex: 0 0 calc(25% - 9px); /* 4 por linha */
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    flex: 0 0 calc(33.33% - 8px); /* 3 por linha */
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex: 0 0 calc(50% - 6px); /* 2 por linha */
+  }
+}
