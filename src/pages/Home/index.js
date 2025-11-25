@@ -1,13 +1,12 @@
-// src/pages/Home/index.js
 import styles from './Home.module.css';
 import { Banner, Cards } from '../../components';
 
-function Home() {
+function Home({ searchTerm }) {
   return (
     <main className={styles.main}>
       <div className={styles.page}>
         <Banner />
-        <Cards />
+        <Cards searchTerm={searchTerm} />
       </div>
     </main>
   );

@@ -47,9 +47,8 @@ function getExtraInfo(movie) {
 }
 
 function Watch() {
-  const { id } = useParams(); // id vem da URL: /watch/:id
+  const { id } = useParams();
 
-  // CASO 1: /watch (sem id)
   if (!id) {
     return (
       <main className={styles.main}>
@@ -68,7 +67,6 @@ function Watch() {
     );
   }
 
-  // CASO 2: /watch/:id com id inválido
   const movie = movies.find((m) => m.id === id);
 
   if (!movie) {
@@ -89,7 +87,6 @@ function Watch() {
     );
   }
 
-  // CASO 3: /watch/:id válido → exibe player + infos
   const extra = getExtraInfo(movie);
   const embedUrl = `https://www.youtube.com/embed/${movie.id}`;
 

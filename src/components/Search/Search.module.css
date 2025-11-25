@@ -1,0 +1,36 @@
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 260px;           
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.input {
+  width: 100%;
+  padding: 7px 12px 7px 30px; 
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.input::placeholder {
+  color: #8a8a8a;
+}
+
+.input:focus {
+  border-color: #1f6098;
+  box-shadow: 0 0 0 2px rgba(31, 96, 152, 0.25);
+}

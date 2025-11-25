@@ -1,12 +1,14 @@
 .header {
   background-color: #61aeca;
   height: 70px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: center; /* Centraliza a logo */
+  padding: 0 16px;
 }
 
 .logoLink {
+  justify-self: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -14,5 +16,11 @@
 
 .logo {
   height: 40px;
-  cursor: pointer; /* deixa claro que é clicável */
+  cursor: pointer;
+}
+
+.searchContainer {
+  justify-self: end;
+  max-width: 320px;
+  width: 100%;
 }

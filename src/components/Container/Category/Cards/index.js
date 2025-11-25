@@ -4,13 +4,25 @@ import movies from '../../../../data/movies';
 
 const CATEGORIES = ['Ação', 'Comédia', 'Romance', 'Terror'];
 
-function Cards() {
+function Cards({ searchTerm = '' }) {
+  const normalizedTerm = searchTerm.trim().toLowerCase();
+
+  const filteredMovies = normalizedTerm
+    ? movies.filter((movie) =>
+        movie.title.toLowerCase().includes(normalizedTerm)
+      )
+    : movies;
+
   return (
     <section className={styles.wrapper}>
       {CATEGORIES.map((category) => {
-        const moviesByCategory = movies.filter(
+        const moviesByCategory = filteredMovies.filter(
           (movie) => movie.category === category
         );
+
+        if (normalizedTerm && moviesByCategory.length === 0) {
+          return null;
+        }
 
         return (
           <CategorySection

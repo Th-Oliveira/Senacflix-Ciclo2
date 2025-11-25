@@ -10,7 +10,6 @@ function MovieCard({ movie }) {
     >
       <img src={movie.img} alt={movie.title} className={styles.image} />
 
-      {/* TÍTULO DO FILME ABAIXO DO CARD */}
       <span className={styles.title}>{movie.title}</span>
     </Link>
   );

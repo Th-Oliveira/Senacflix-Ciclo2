@@ -9,7 +9,6 @@
   padding: 0 16px;
 }
 
-/* Estado "nenhum filme selecionado" */
 .pageTitle {
   color: #ffffff;
   margin-bottom: 8px;
@@ -20,7 +19,6 @@
   margin-bottom: 30px;
 }
 
-/* Card de detalhes do filme */
 .card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -28,7 +26,6 @@
   margin-top: 16px;
 }
 
-/* Título + botão na mesma linha */
 .cardHeader {
   display: flex;
   justify-content: space-between;
@@ -51,10 +48,9 @@
   color: #555555;
 }
 
-/* Player responsivo 16:9 */
 .playerWrapper {
   position: relative;
-  padding-top: 56.25%; /* 16:9 */
+  padding-top: 56.25%; 
   margin-bottom: 16px;
   border-radius: 8px;
   overflow: hidden;
@@ -68,7 +64,6 @@
   border: 0;
 }
 
-/* Bloco de descrição */
 .descriptionBlock {
   margin-bottom: 16px;
 }
@@ -79,7 +74,6 @@
   color: #333333;
 }
 
-/* Informações adicionais */
 .infoGrid {
   display: flex;
   flex-wrap: wrap;
@@ -102,7 +96,6 @@
   color: #333333;
 }
 
-/* Link "Voltar para Home" no topo do card */
 .backLink {
   text-decoration: none;
   padding: 8px 16px;
